@@ -38,6 +38,7 @@ nav.order_item{
     margin: 1%;
     padding: 1.5%;
     margin-bottom: 2.5%;
+    display: none;
 }
 .order_container{
     background-color: #FFF1D0;
