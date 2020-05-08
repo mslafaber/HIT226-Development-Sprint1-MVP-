@@ -1,5 +1,11 @@
+/* Styling for containers, and other components except for menu components starts from here
+    Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
+    Thanks
+*/
 *{
     box-sizing: border-box;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #080705;
 }
 body{
     background-color: #BF0603;
@@ -18,7 +24,7 @@ h1{
     font-size: 2.5em;
 }
 h2{
-    font-size: 2em;
+    font-size: 2.1em;
 }
 h3{
     font-size: 1.3em;
@@ -43,7 +49,7 @@ h3{
     background-color: #FFF1D0;
     padding: 1%;
 }
-article.payment{
+.payment{
     display: none;
     background-color: #FFF1D0;
     padding: 1%;
@@ -66,11 +72,10 @@ button{
     padding: 5%;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1.1em;
     color: #FFF1D0;
-    margin: 2.0%;
+    margin: 1.0%;
     cursor: pointer;
-    transition: 0.4ms;
     border-radius: 10px;
 }
 #order_back_button{
@@ -100,3 +105,7 @@ button{
     margin: 1%;
     padding: 2%;
 }
+/* Styling for containers, and other components except for menu components ends here
+    Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
+    Thanks
+*/

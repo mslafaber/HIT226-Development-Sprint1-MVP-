@@ -217,9 +217,35 @@
         </article>
         <article id="payment" class="payment">
             <h2>Payment Method</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellat voluptatibus possimus! Pariatur suscipit optio veritatis ea architecto fugit aut fuga enim magnam quis, soluta beatae modi dignissimos quaerat?
-            </p>
+            <form action="" class="payment" id="payment_form">
+                <label for="name">Name: </label><br>
+                <input type="text" id="name" class="form_element" required><br>
+
+                <label for="email">E-Mail Address: </label><br>
+                <input type="text" id="email" class="form_element" required><br>
+
+                <label for="phone">Phone Number: </label><br>
+                <input type="text" id="phone" class="form_element" required><br>
+
+                <input type="radio" name="payment_method" id="credit_card" required>Pay Online</input><br>
+                <input type="radio" name="payment_method" id="pay_in_store" required>Pay in Store</input><br>
+
+            </form>
+
+            <form action="" class="payment" id="credit_card_form">
+                <label for="card_number">Card Number: </label><br>
+                <input type="text" class="form_element cc_elements" id="card_number">
+                <input type="text" class="form_element cc_elements" id="card_number">
+                <input type="text" class="form_element cc_elements" id="card_number">
+                <input type="text" class="form_element cc_elements" id="card_number"><br>
+
+                <label for="securitycode">Security Code</label><br>
+                <input type="text" class="form_element cc_elements" id="securitycode"><br>
+
+                <label for="exp_date">Expiry Date: </label><br>
+                <input type="date" id="exp_date" class="cc_elements form_element"><br>
+            </form>
+
         </article>
 
         <article id="confirmation" class="confirmation">

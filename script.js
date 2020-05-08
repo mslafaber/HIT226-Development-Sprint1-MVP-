@@ -35,9 +35,8 @@ $(document).ready(function () {
     $("#order_next_button").click(function() {
         $(".order_time").hide();
         $(".payment_time").show(); 
-        $(".order_item").slideUp(175, function () {
-            $(".order_container").slideUp();
-            $("#payment").slideDown(225);
+        $(".order_container").slideUp(175, function () {
+            $("#payment, #payment_form").slideDown(175);
         });
     });
     $("#payment_back_button").click(function() { 
@@ -56,14 +55,24 @@ $(document).ready(function () {
         $(".payment_time").hide();
         $(".confirmation_time").show(); 
         $("#payment").slideUp(175, function () {
-            $("#confirmation").slideDown(225);
+            $("#confirmation").slideDown(175);
         });
     });
     $("#confirmation_back_button").click(function() {
         $(".payment_time").show();
         $(".confirmation_time").hide(); 
         $("#confirmation").slideUp(175, function () {
-            $("#payment").slideDown(225);
+            $("#payment").slideDown(175);
+        });
+    });
+    $("#credit_card").click(function () { 
+        $("#credit_card_form").slideDown(175, function () {
+            $(".cc_elements").attr('required', true);
+        });
+    });
+    $("#pay_in_store").click(function () {
+        $("#credit_card_form").slideUp(175, function () {
+            $(".cc_elements").attr('required', false);
         });
     });
 });
