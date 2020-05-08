@@ -1,7 +1,3 @@
-/* Styling for containers, and other components except for menu components starts from here
-    Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
-    Thanks
-*/
 *{
     box-sizing: border-box;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -29,6 +25,30 @@ h2{
 h3{
     font-size: 1.3em;
 }
+button{
+    border: none;
+    background-color: #bf0603;
+    padding: 1.85%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #FFF1D0;
+    margin: 1.0%;
+    cursor: pointer;
+    border-radius: 7.5px;
+}
+.form_element{
+    margin-bottom: 1.5%;
+    height: 3em;
+}
+/* Styling for containers, and other components except for menu components starts from here
+    Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
+    Thanks
+*/
+.order_parent{
+    width: 65%;
+    align-self: center;
+}
 .menu_nav{
     padding: 1.5%;
     display: grid;
@@ -37,7 +57,6 @@ h3{
     font-family: Impact, Charcoal, sans-serif;
     font-size: 1.2em;
     list-style: none;
-    grid-gap: 1%;
 }
 .order_item{
     background-color: #E6C3A6;
@@ -66,18 +85,6 @@ article.confirmation{
     justify-items: center;
     padding: 2.5%;
 }
-button{
-    border: none;
-    background-color: #bf0603;
-    padding: 5%;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #FFF1D0;
-    margin: 1.0%;
-    cursor: pointer;
-    border-radius: 10px;
-}
 #order_back_button{
     opacity: 0.65;
 }
@@ -104,6 +111,11 @@ button{
     background-color: #FFF1D0;
     margin: 1%;
     padding: 2%;
+}
+.menu_nav button{
+    margin: 0;
+    cursor: pointer;
+    border-radius: 0;
 }
 /* Styling for containers, and other components except for menu components ends here
     Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
