@@ -23,10 +23,10 @@ h2{
 h3{
     font-size: 1.3em;
 }
-nav.order_item{
+.menu_nav{
     padding: 1.5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(2.5em, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(3.5em, 1fr));
     justify-items: center;
     font-family: Impact, Charcoal, sans-serif;
     font-size: 1.2em;
@@ -38,15 +38,25 @@ nav.order_item{
     margin: 1%;
     padding: 1.5%;
     margin-bottom: 2.5%;
-    display: none;
 }
 .order_container{
     background-color: #FFF1D0;
     padding: 1%;
 }
+article.payment{
+    display: none;
+    background-color: #FFF1D0;
+    padding: 1%;
+}
+article.confirmation{
+    background-color: #FFF1D0;
+    padding: 1%;
+    display: none;
+}
 .order_status_bar{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    background-color: #FFF1D0;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     padding: 2.5%;
 }
@@ -61,7 +71,19 @@ button{
     margin: 2.0%;
     cursor: pointer;
     transition: 0.4ms;
-    border: black solid;
+    border-radius: 10px;
+}
+#order_back_button{
+    opacity: 0.65;
+}
+#confirmation_next_button{
+    opacity: 0.65;
+}
+.payment_time{
+    display: none;
+}
+.confirmation_time{
+    display: none;
 }
 .sub_item{
     width: 100%;

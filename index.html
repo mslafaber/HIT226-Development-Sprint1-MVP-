@@ -7,7 +7,7 @@
     <body>
         <article class="order_container">
 
-            <nav id="menu_nav" class="order_item">
+            <nav id="menu_nav" class="menu_nav">
                 <button id="pizza_button" class="sub_item">Pizza</button> 
                 <button id="pasta_button" class="sub_item">Pasta</button> 
                 <button id="sides_button" class="sub_item">Sides</button> 
@@ -214,17 +214,34 @@
     
                 </div>
             </section>
-
-            <div id="status_bar" class="order_item order_status_bar">
-
-                <button>Back</button>
-                <h3>Order Summary</h3>
-                <button>Next</button>
-
-            
-            </div>
-
         </article>
+        <article id="payment" class="payment">
+            <h2>Payment Method</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellat voluptatibus possimus! Pariatur suscipit optio veritatis ea architecto fugit aut fuga enim magnam quis, soluta beatae modi dignissimos quaerat?
+            </p>
+        </article>
+
+        <article id="confirmation" class="confirmation">
+            <h2>Order Confirmation</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellat voluptatibus possimus! Pariatur suscipit optio veritatis ea architecto fugit aut fuga enim magnam quis, soluta beatae modi dignissimos quaerat?
+            </p>
+        </article>
+
+        <div id="status_bar" class="order_status_bar">
+
+            <button id="order_back_button" class="order_time">Back</button>
+            <button id="order_next_button" class="order_time">Next</button>
+
+            <button id="payment_back_button" class="payment_time">Back</button>
+            <button id="payment_next_button" class="payment_time">Next</button>
+
+            <button id="confirmation_back_button" class="confirmation_time">Back</button>
+            <button id="confirmation_next_button" class="confirmation_time">Next</button>
+
+        
+        </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
