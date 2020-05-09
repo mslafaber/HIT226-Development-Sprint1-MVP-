@@ -125,24 +125,21 @@ article.confirmation{
 */
 /*styles for the all the cards starts here*/
 div.cardItems{
+  width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-div.card{
-    margin: 30px;
-    width: 350px;
-    display: grid;
-    border: black solid;
-    background-color: #FFF1D0;
-}
-div.cardItem{
-    padding: 2.5%;
+div.menu_item{
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 5px;
 }
 
 .foodtitle {
-  display: block;
   width: 100%;
   text-align: center;
   font-size: 1.3em;
@@ -151,28 +148,33 @@ div.cardItem{
   color: black;
 }
 
+.foodprice{
+  margin-left: 10px;
+  padding: 0px;
+}
+
+strong{
+  color: #bf0603;
+  font-weight: bolder;
+}
+
 .foodname{
   font-size: 1.1em;
 }
 
 img.cardImage{
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 50%;
 }
 
 .food-details{
-  display: flex;
   align-content: center;
   margin: 0px;
   padding-left: 10px;
 }
 
-#moredetails{
-  display: none;
-}
-
 div.cardBar{
-    display: flex;
+
 }
 
 .button1,
@@ -182,7 +184,6 @@ div.cardBar{
     background-color: #bf0603;
     padding: 2.5%;
     text-decoration: none;
-    display: inline-block;
     font-weight: bold;
     color: #FFF1D0;
     margin: 2.0%;
@@ -198,9 +199,9 @@ div.cardBar{
     color: #FFF1D0;
 }
 
-@media screen and (max-width: 300px) {
-    div.card{
-        width: 100%;
+@media screen and (max-width: 600px) {
+    div.menu_item{
+      width: 100%;
     }
 }
 

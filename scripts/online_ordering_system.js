@@ -124,18 +124,3 @@ function purchaseAllSelectedFood(event) {
   }
   updatefoodcart();
 }
-
-//this function is for the readmore function in each food item card
-var check = 0;
-function readmore() {
-  if(!check){
-    document.getElementById("moredetails").style.display = "inline";
-    document.getElementById("read").innerHTML = "View Less";
-    check = 1;
-  }
-  else {
-    document.getElementById("moredetails").style.display = "none";
-    document.getElementById("read").innerHTML = "View More";
-    check = 0;
-  }
-}
