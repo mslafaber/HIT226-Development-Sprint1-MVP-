@@ -32,7 +32,7 @@ button{
     padding: 1.85%;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #FFF1D0;
     margin: 1.0%;
     cursor: pointer;
@@ -46,10 +46,6 @@ button{
     Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
     Thanks
 */
-.order_parent{
-    width: 65%;
-    align-self: center;
-}
 .menu_nav{
     padding: 1.5%;
     display: grid;
@@ -103,17 +99,6 @@ article.confirmation{
     height: 100%;
 
 }
-/*
-.menu{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    margin: 1%;
-}*/
-/*.menu_item{
-    background-color: #FFF1D0;
-    margin: 1%;
-    padding: 2%;
-}*/
 .menu_nav button{
     margin: 0;
     cursor: pointer;
@@ -124,33 +109,17 @@ article.confirmation{
     Thanks
 */
 /*styles for the all the cards starts here*/
-div.cardItems{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.cardItem{
+  margin: 1%;
+}
+.card_component{
+  margin: 2.5%;
+  padding: 4.5%;
 }
 
 div.menu_item{
-  width: 50%;
-  border: 1px solid black;
-  border-radius: 6px;
-  padding: 5px;
-}
-
-.foodtitle {
-  width: 100%;
-  text-align: center;
-  font-size: 1.3em;
-  margin-top: 2px;
-  margin-bottom: 9px;
-  color: black;
-}
-
-.foodprice{
-  margin-left: 10px;
-  padding: 0px;
+  background-color: #FFF1D0;
+  margin-bottom: 1%;
 }
 
 strong{
@@ -163,14 +132,15 @@ strong{
 }
 
 img.cardImage{
-  width: 100%;
-  height: 50%;
+  max-width: 95%;
 }
 
-.food-details{
-  align-content: center;
-  margin: 0px;
-  padding-left: 10px;
+
+.food_item{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+  justify-items: center;
+  align-items: center;
 }
 
 div.cardBar{
@@ -182,16 +152,16 @@ div.cardBar{
 .addtocart-btn {
     border: none;
     background-color: #bf0603;
-    padding: 2.5%;
+    padding: 25%;
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
     color: #FFF1D0;
-    margin: 2.0%;
     cursor: pointer;
     transition: 0.4ms;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .button1:hover{
@@ -199,10 +169,15 @@ div.cardBar{
     color: #FFF1D0;
 }
 
-@media screen and (max-width: 600px) {
-    div.menu_item{
-      width: 100%;
+.card_component{
+  padding: .25%;
+}
+
+@media screen and (max-width: 700px) {
+    .cardImage{
+      display: none;
     }
+    
 }
 
 /*styles for the cart starts here*/
@@ -253,7 +228,6 @@ h2.cart-main-heading{
 .quantity-addtocart{
   width: 35%;
 }
-
 img.cart-image {
   margin-left: 0px;
   width: 75px;
