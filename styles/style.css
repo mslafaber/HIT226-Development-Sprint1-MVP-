@@ -151,16 +151,24 @@ div.cardItem{
   color: black;
 }
 
+.foodname{
+  font-size: 1.1em;
+}
+
 img.cardImage{
     width: 100%;
     height: 200px;
 }
 
-div p.food-details{
+.food-details{
   display: flex;
   align-content: center;
   margin: 0px;
-  padding: 3px;
+  padding-left: 10px;
+}
+
+#moredetails{
+  display: none;
 }
 
 div.cardBar{
