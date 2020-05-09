@@ -105,11 +105,6 @@ article.confirmation{
   padding: 4.5%;
 }
 
-div.menu_item{
-  background-color: #FFF1D0;
-  margin-bottom: 1%;
-}
-
 strong{
   color: #bf0603;
   font-weight: bolder;
@@ -129,6 +124,8 @@ img.cardImage{
   grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
   justify-items: center;
   align-items: center;
+  background-color: #FFF1D0;
+  margin-bottom: 1%;
 }
 
 div.cardBar{
