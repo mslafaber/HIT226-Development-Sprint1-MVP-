@@ -103,7 +103,7 @@ function addAnewFoodtoCart(foodtitle, foodprice, foodimage) {
     <span class="price-addtocart addtocart-column">${foodprice}</span>
     <div class="quantity-addtocart addtocart-column">
       <input class="quantity-input" type="number" value="1">
-      <button class="button1 remove-button" type="button">REMOVE</button>
+      <button class="remove-button" type="button">Remove</button>
     </div>`
   newrow.innerHTML = newCartrowContents; //innerHTML because we are not passing string but a whole HTML section
   newcartitems.appendChild(newrow); //will add the new food item into the cart

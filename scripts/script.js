@@ -34,7 +34,7 @@ $(document).ready(function () {
     $("#order_next_button").click(function() {
         $(".order_time").hide();
         $(".payment_time").show(); 
-        $(".order_container").slideUp(300, function () {
+        $(".order_container").slideUp(600, function () {
             $("#payment").slideDown(300);
         });
     });
@@ -43,6 +43,7 @@ $(document).ready(function () {
         $(".payment_time").hide(); 
         $("#payment").slideUp(300, function(){
             $(".order_container").slideDown(300, function(){
+                $("#cart_contents").hide();
                 $("#pizza").slideDown();
                 $("#pasta_button, #sides_button, #drinks_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
                 $("#pizza_button").css({"background-color":"red"});
@@ -79,5 +80,8 @@ $(document).ready(function () {
         $("#credit_card_form").slideUp(300, function () {
             $(".cc_elements").attr('required', false);
         });
+    });
+    $("#view_cart").click(function () { 
+        $("#cart_contents").slideToggle();
     });
 });

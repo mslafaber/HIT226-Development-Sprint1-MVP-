@@ -26,18 +26,6 @@ h2{
 h3{
     font-size: 1.3em;
 }
-button{
-    border: none;
-    background-color: #bf0603;
-    padding: 1.85%;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-    color: #FFF1D0;
-    margin: 1.0%;
-    cursor: pointer;
-    border-radius: 7.5px;
-}
 .form_element{
     margin-bottom: 1.5%;
     height: 3em;
@@ -148,20 +136,24 @@ div.cardBar{
 }
 
 .button1,
-.remove-button,
-.addtocart-btn {
-    border: none;
-    background-color: #bf0603;
-    padding: 25%;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFF1D0;
-    cursor: pointer;
-    transition: 0.4ms;
-    border-radius: 5px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 1em;
+.remove-button{
+  border: none;
+  background-color: #bf0603;
+  padding: 1.5%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  color: #FFF1D0;
+  margin: 1.0%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view_cart{
+  margin: 0%;
+  padding: 0.25%;
+  height: 45%;
+  width: 15%;
 }
 
 .button1:hover{
@@ -173,6 +165,20 @@ div.cardBar{
   padding: .25%;
 }
 
+.addtocart-btn{
+  border: none;
+  background-color: #bf0603;
+  padding: 15.5%;
+  padding-right: 20%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  color: #FFF1D0;
+  margin: 1.0%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 700px) {
     .cardImage{
       display: none;
@@ -182,8 +188,6 @@ div.cardBar{
 
 /*styles for the cart starts here*/
 h2.cart-main-heading{
-  display: flex;
-  justify-content: space-around;
   font-weight: bold;
   font-size: 2em;
   color: #bf0603;
@@ -243,7 +247,7 @@ div span.cart-food-title {
 input.quantity-input{
   height: 34px;
   width: 50px;
-  border-radius: 5px;
+  border-radius: 1.5px;
   border: 1px solid #56CCF2;
   background-color: #eee;
   padding: 0;
@@ -272,4 +276,15 @@ div span.food-sum-price{
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.7em;
+}
+.cart_summary{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: left;
+  margin: 2.5%;
+  justify-items: center;
+}
+.cart_contents{
+  display: none;
+  padding: 2.5%;
 }
