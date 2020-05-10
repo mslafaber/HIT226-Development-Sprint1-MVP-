@@ -195,7 +195,6 @@ h2.cart-main-heading{
 }
 .item-addtocart{
   width: 45%;
-  align: left;
 }
 .addtocart-column{
   display: flex;
@@ -536,12 +535,12 @@ h1 {
     margin: 35px;
     text-align: center;
     color: #060606;
-    position: center;
+
 }
 .footer1{
     font-family: Impact, Charcoal, sans-serif;
     color: #fff1d0;
     font-size:25px;
     font-weight: lighter;
-    position: center;
+
 }
