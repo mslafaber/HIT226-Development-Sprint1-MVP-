@@ -400,6 +400,13 @@ nav ul li a:hover{
 .fa-google{
     color: #bf0603;
 }
+.fa-youtube{
+    color:#bf0603;
+}
+.fa-envelope{
+    color:#bf0603;
+}
+
 .container {
     display: flex;
     display: -webkit-flex; /* Safari */
@@ -464,10 +471,12 @@ ul li:hover{
 a:link{
     color: #fff1d0;
     font-family: Impact, Charcoal, sans-serif;
+    text-decoration: none;
 
 }
 a:visited{
     color: #fff1d0;
+    text-decoration: none;
 }
 a:hover{
     color: #060606;
