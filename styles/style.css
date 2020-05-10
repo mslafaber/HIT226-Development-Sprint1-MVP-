@@ -104,8 +104,10 @@ article.confirmation{
   margin: 1%;
 }
 .card_component{
-  margin: 2.5%;
+  width: 85%;
   padding: 4.5%;
+  margin: 2.5%;
+  text-align: left;
 }
 strong{
   color: #bf0603;
@@ -118,13 +120,11 @@ strong{
   font-weight: lighter;
 }
 img.cardImage{
-  max-width: 95%;
+  max-width: 75%;
 }
 .food_item{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
   background-color: #FFF1D0;
   margin-bottom: 1%;
 }
@@ -139,7 +139,7 @@ img.cardImage{
   color: #FFF1D0;
   margin: 1.0%;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2.5px;
 }
 .button1:hover{
     background-color: brown;
@@ -152,22 +152,24 @@ img.cardImage{
 /*styles for the cart starts here*/
 .view_cart{
   margin: 0%;
-  padding: 1.75%;
-  max-height: 50%;
-  align-items: flex-start;
+  padding: 0.5%;
+  max-height: 35%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 .addtocart-btn{
   border: none;
   background-color: #bf0603;
-  padding: 7.5%;
-  padding-right: 20%;
+  padding: 1.5%;
   text-decoration: none;
   font-weight: bold;
   font-size: 1em;
   color: #FFF1D0;
+  max-width: 40%;
   margin: 1.0%;
   cursor: pointer;
   border-radius: 5px;
+  text-align: center;
 }
 .cart_contents{
   display: flex;
