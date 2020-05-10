@@ -426,7 +426,7 @@ nav ul li a:hover{
 }
 .dec li.footeritem{
     color: #bf0603;
-    font-size:30px;
+    font-size:1.2em;
     height: 60px;
     width:60px;
     background: #fff1d0;
@@ -458,6 +458,9 @@ nav ul li a:hover{
     color: #bf0603;
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
+}
+a.footerbottom{
+  font-size: .85em;
 }
 a.footerbottom:link{
     color: #fff1d0;
