@@ -5,6 +5,7 @@
 }
 body{
     background-color: #BF0603;
+    width: 100%;
 }
 h1,h2,h3,
 .foodprice{
@@ -34,6 +35,9 @@ h3{
     Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
     Thanks
 */
+.order_parent{
+  margin: 1%;
+}
 .menu_nav{
     padding: 1.5%;
     display: grid;
@@ -45,7 +49,6 @@ h3{
 }
 .order_item{
     background-color: #E6C3A6;
-    margin: 1%;
     padding: 1.5%;
     margin-bottom: 2.5%;
 }
@@ -104,23 +107,19 @@ article.confirmation{
   margin: 2.5%;
   padding: 4.5%;
 }
-
 strong{
   color: #bf0603;
   font-weight: bolder;
 }
-
 .foodname{
   font-size: 1.3em;
   font-family: Impact, Charcoal, sans-serif;
   color: #BF0603;
   font-weight: lighter;
 }
-
 img.cardImage{
   max-width: 95%;
 }
-
 .food_item{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
@@ -129,7 +128,6 @@ img.cardImage{
   background-color: #FFF1D0;
   margin-bottom: 1%;
 }
-
 .button1,
 .remove-button{
   border: none;
@@ -143,27 +141,25 @@ img.cardImage{
   cursor: pointer;
   border-radius: 5px;
 }
-
-.view_cart{
-  margin: 0%;
-  padding: 0.25%;
-  height: 45%;
-  width: 15%;
-}
-
 .button1:hover{
     background-color: brown;
     color: #FFF1D0;
 }
-
 .card_component{
   padding: .25%;
 }
 
+/*styles for the cart starts here*/
+.view_cart{
+  margin: 0%;
+  padding: 1.75%;
+  max-height: 50%;
+  align-items: flex-start;
+}
 .addtocart-btn{
   border: none;
   background-color: #bf0603;
-  padding: 15.5%;
+  padding: 7.5%;
   padding-right: 20%;
   text-decoration: none;
   font-weight: bold;
@@ -173,42 +169,32 @@ img.cardImage{
   cursor: pointer;
   border-radius: 5px;
 }
-
-@media screen and (max-width: 700px) {
-    .cardImage{
-      display: none;
-    }
+.cart_contents{
+  display: flex;
+  flex-wrap: wrap;
 }
-
-/*styles for the cart starts here*/
 h2.cart-main-heading{
   font-weight: bold;
   font-size: 2em;
   color: #bf0603;
 }
-
 .cart-heading{
   font-weight: bold;
   font-size: 1.25em;
 }
-
 .addtocart-row{
   display: flex;
 }
-
 .addtocart-row:last-child .addtocart-column{
     border: none;
 }
-
 .addtocart-row:last-child{
     border-bottom: 1px solid black;
 }
-
 .item-addtocart{
   width: 45%;
   align: left;
 }
-
 .addtocart-column{
   display: flex;
   align-items: center;
@@ -217,12 +203,10 @@ h2.cart-main-heading{
   padding-bottom: 10px;
   margin-top: 10px;
 }
-
 .price-addtocart{
   width: 20%;
   font-size: 1.2em;
 }
-
 .quantity-addtocart{
   width: 35%;
 }
@@ -232,12 +216,10 @@ img.cart-image {
   height: auto;
   border-radius: 10px;
 }
-
 div span.cart-food-title {
     margin-left: 20px;
     font-size: 1.2em;
 }
-
 input.quantity-input{
   height: 34px;
   width: 50px;
@@ -249,23 +231,19 @@ input.quantity-input{
   font-size: 1.2em;
   margin-right: 25px;
 }
-
 div.food-total{
   text-align: end;
   margin-top: 10px;
   margin-right: 10px;
 }
-
 div strong.food-sum-title{
   font-weight: bold;
   font-size: 1.5em;
   margin-right: 20px;
 }
-
 div span.food-sum-price{
   font-size: 1.1em;
 }
-
 .purchase-button{
   display: block;
   margin: 40px auto 80px auto;
@@ -333,18 +311,15 @@ nav ul li a{
   font-weight: bolder;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
+nav ul li a.active {
   background: #BF0603;
-  border-radius: 6px;
   color: #FFF1D0;
-  transition: 0.75s;
+  transition: 0.35s;
 }
-
-@media (max-width: 100%) {
-  header{
-    margin: 20px;
-  }
+nav ul li a:hover{
+  opacity: 0.75;
+  color: #BF0603;
+  transition: 0.35s;
 }
 
 @media (max-width: 1015px) {
@@ -382,5 +357,13 @@ nav ul li a:hover {
   }
   nav.sitenavigation.active ul li a{
     margin: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cardImage{
+    display: none;
+  }
+  .cart-image{
+    display: none;
   }
 }
