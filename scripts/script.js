@@ -5,7 +5,6 @@ $(document).ready(function () {
         $("#pasta, #sides, #drinks, #meals, #payment").hide();
         $("#pasta_button, #sides_button, #drinks_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
         $("#pizza_button").css({"background-color":"red"});
-
     });
     $("#pasta_button").click(function () {
         $("#pasta").show();
