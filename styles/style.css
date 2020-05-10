@@ -428,10 +428,10 @@ nav ul li a:hover{
     padding:0;
 }
 
-ul{
+.effect{
     display:flex;
 }
-ul li{
+.effect li{
     position: relative;
     display:block;
     color: #bf0603;
@@ -445,7 +445,7 @@ ul li{
     cursor:pointer;
     transition: .3s;
 }
-ul li:before{
+.effect li:before{
     position:absolute;
     content:'';
     top:0;
@@ -458,12 +458,12 @@ ul li:before{
     transform:scale(0.9);
     transition:.8s;
 }
-ul li:hover:before{
+.effect li:hover:before{
     filter:blur(3px);
     transform: scale(2);
     box-shadow: 0 0 30px #d35400;
 }
-ul li:hover{
+.effect li:hover{
     color: #bf0603;
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
@@ -484,10 +484,8 @@ a:hover{
 a:active{
     color: #060606;
 }
-/* main container */
-html {
-    height: 100%;
-}
+
+
 /*main container*/
 .flex-container{
     background-color: #bf0603;
