@@ -26,8 +26,6 @@ function ready() {
     var add_button = buttonforAddtocart[counter];
     add_button.addEventListener('click', finalAddToCart);
   }
-
-  document.getElementsByClassName("purchase-button")[0].addEventListener('click', purchaseAllSelectedFood);
 }
 
 //Following are the different events that are going to do different things in the food CART
@@ -112,15 +110,4 @@ function addAnewFoodtoCart(foodtitle, foodprice, foodimage) {
   //setup of event listeners were done in the ready() function because they were added after the event function was called.
   newrow.getElementsByClassName("remove-button")[0].addEventListener('click',removeA_SingleCartItem);
   newrow.getElementsByClassName("quantity-input")[0].addEventListener('change',editTheQuantity);
-}
-
-//following function sends the customer an alert when the customer press the PURCHASE button. Then
-//clears all food items from the cart and makes the cart total to 0
-function purchaseAllSelectedFood(event) {
-  alert("Thankyou For Your Purchase from Fannie Bay Super Pizza!!");
-  var allCurrentFoodsinCart = document.getElementsByClassName("allcartitems")[0];
-  while (allCurrentFoodsinCart.hasChildNodes()) {
-    allCurrentFoodsinCart.removeChild(allCurrentFoodsinCart.firstChild);
-  }
-  updatefoodcart();
 }
