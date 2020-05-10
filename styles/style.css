@@ -306,13 +306,14 @@ nav ul li a{
 }
 
 nav ul li a.active {
-  background: #BF0603;
-  color: #FFF1D0;
+  background: #E6C3A6;
+  color: #BF0603;
   transition: 0.35s;
 }
 nav ul li a:hover{
   opacity: 0.75;
   color: #BF0603;
+  background: #E6C3A6;
   transition: 0.35s;
 }
 
