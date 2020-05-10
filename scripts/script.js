@@ -34,14 +34,14 @@ $(document).ready(function () {
         $(".order_time").hide();
         $(".payment_time").show();
         $(".order_container").slideUp(600, function () {
-            $("#payment").slideDown(300);
+            $("#payment").slideDown(175);
         });
     });
     $("#payment_back_button").click(function() {
         $(".order_time").show();
         $(".payment_time").hide();
-        $("#payment").slideUp(300, function(){
-            $(".order_container").slideDown(300, function(){
+        $("#payment").slideUp(175, function(){
+            $(".order_container").slideDown(175, function(){
                 $("#cart_contents").hide();
                 $("#pizza").slideDown();
                 $("#pasta_button, #sides_button, #drinks_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
@@ -53,30 +53,30 @@ $(document).ready(function () {
     $("#payment_next_button").click(function() {
         $(".payment_time").hide();
         $(".confirmation_time").show();
-        $("#payment").slideUp(300, function () {
-            $("#confirmation").slideDown(300);
+        $("#payment").slideUp(175, function () {
+            $("#confirmation").slideDown(175);
         });
     });
     $("#confirmation_back_button").click(function() {
         $(".payment_time").show();
         $(".confirmation_time").hide();
-        $("#confirmation").slideUp(300, function () {
-            $("#payment").slideDown(300);
+        $("#confirmation").slideUp(175, function () {
+            $("#payment").slideDown(175);
         });
     });
     $("#credit_card").click(function () {
-        $("#credit_card_form").slideDown(300, function () {
+        $("#credit_card_form").slideDown(175, function () {
             $(".cc_elements").attr('required', true);
         });
-        $("#pay_in_store_form").slideUp(300, function () {
+        $("#pay_in_store_form").slideUp(175, function () {
             $(".pis_elements").attr('required', false);
         });
     });
     $("#pay_in_store").click(function () {
-        $("#pay_in_store_form").slideDown(300, function () {
+        $("#pay_in_store_form").slideDown(175, function () {
             $(".pis_elements").attr('required', true);
         });
-        $("#credit_card_form").slideUp(300, function () {
+        $("#credit_card_form").slideUp(175, function () {
             $(".cc_elements").attr('required', false);
         });
     });
