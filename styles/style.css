@@ -369,3 +369,35 @@ nav ul li a:hover{
     display: none;
   }
 }
+
+/*footer*/
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    font-family: Georgia;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+
+}
+.fa-facebook-f {
+    background:rgba(255, 255, 255, 0);
+    color: #bf0603;
+
+}
+.fa-twitter {
+    background: rgba(255, 255, 255, 0);
+    color: #bf0603;
+}
+.fa-instagram{
+    color: #bf0603;
+}
+.fa-google{
+    color: #bf0603;
+}
