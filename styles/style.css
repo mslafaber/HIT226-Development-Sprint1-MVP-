@@ -282,3 +282,105 @@ div span.food-sum-price{
   display: none;
   padding: 2.5%;
 }
+
+/*main menu styles start here*/
+header {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  background: #FFF1D0;
+  box-sizing: border-box;
+  box-shadow: 0 8px 10px black;
+}
+
+.logo{
+  color: #7B3E19;
+  height: 60px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav.sitenavigation{
+  float: right;
+}
+
+.clearfix{
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a{
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #7B3E19;
+  font-weight: bolder;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #BF0603;
+  border-radius: 6px;
+  color: #FFF1D0;
+  transition: 0.75s;
+}
+
+@media (max-width: 100%) {
+  header{
+    margin: 20px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .navigation-toggle{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #BF0603;
+  }
+  .navigation-toggle:before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  .navigation-toggle.active:before {
+    content: "\f00d";
+  }
+  nav.sitenavigation {
+    display: none;
+  }
+  nav.sitenavigation.active {
+    display: block;
+    width: 100%;
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+  }
+  nav.sitenavigation.active ul {
+    display: block;
+  }
+  nav.sitenavigation.active ul li a{
+    margin: 0;
+  }
+}
