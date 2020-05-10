@@ -430,7 +430,7 @@ nav ul li a:hover{
 .dec{
     display:flex;
 }
-.dec li{
+.dec li.footeritem{
     position: relative;
     display:block;
     color: #bf0603;
@@ -444,7 +444,7 @@ nav ul li a:hover{
     cursor:pointer;
     transition: .3s;
 }
-.dec li:before{
+.dec li.footeritem:before{
     position:absolute;
     content:'';
     top:0;
@@ -457,30 +457,30 @@ nav ul li a:hover{
     transform:scale(0.9);
     transition:.8s;
 }
-.dec li:hover:before{
+.dec li.footeritem:hover:before{
     filter:blur(3px);
     transform: scale(2);
     box-shadow: 0 0 30px #d35400;
 }
-.dec li:hover{
+.dec li.footeritem:hover{
     color: #bf0603;
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
 }
-a:link{
+a.footerbottom:link{
     color: #fff1d0;
     font-family: Impact, Charcoal, sans-serif;
     text-decoration: none;
 
 }
-a:visited{
+a.footerbottom:visited{
     color: #fff1d0;
     text-decoration: none;
 }
-a:hover{
+a.footerbottom:hover{
     color: #060606;
 }
-a:active{
+a.footerbottom:active{
     color: #060606;
 }
 
