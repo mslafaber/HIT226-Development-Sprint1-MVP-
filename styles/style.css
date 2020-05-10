@@ -427,10 +427,10 @@ nav ul li a:hover{
     padding:0;
 }
 
-.effect{
+.dec{
     display:flex;
 }
-.effect li{
+.dec li{
     position: relative;
     display:block;
     color: #bf0603;
@@ -444,7 +444,7 @@ nav ul li a:hover{
     cursor:pointer;
     transition: .3s;
 }
-.effect li:before{
+.dec li:before{
     position:absolute;
     content:'';
     top:0;
@@ -457,12 +457,12 @@ nav ul li a:hover{
     transform:scale(0.9);
     transition:.8s;
 }
-.effect li:hover:before{
+.dec li:hover:before{
     filter:blur(3px);
     transform: scale(2);
     box-shadow: 0 0 30px #d35400;
 }
-.effect li:hover{
+.dec li:hover{
     color: #bf0603;
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
@@ -508,35 +508,6 @@ a:active{
 
 }
 
-aside{
-    width: 28%;
-    margin: 200px 30px 200px 30px;
-    border-radius: 10px;
-}
-article, aside{
-    background-color: #FFF1D0;
-    padding: 2.5%;
-}
-article{
-    width: 75%;
-    margin-right: 0.5%;
-}
-section{
-    background-color: #E6C3A6;
-    padding: 10%;
-    margin: 1.5%;
-
-}
-h1 {
-    padding: 20px;
-    font-family: "Edwardian Script ITC";
-    font-size: 6em;
-    font-weight: bold;
-    margin: 35px;
-    text-align: center;
-    color: #060606;
-
-}
 .footer1{
     font-family: Impact, Charcoal, sans-serif;
     color: #fff1d0;
