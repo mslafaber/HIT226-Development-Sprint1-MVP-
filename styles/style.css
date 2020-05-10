@@ -111,13 +111,15 @@ strong{
 }
 
 .foodname{
-  font-size: 1.1em;
+  font-size: 1.3em;
+  font-family: Impact, Charcoal, sans-serif;
+  color: #BF0603;
+  font-weight: lighter;
 }
 
 img.cardImage{
   max-width: 95%;
 }
-
 
 .food_item{
   display: grid;
@@ -126,10 +128,6 @@ img.cardImage{
   align-items: center;
   background-color: #FFF1D0;
   margin-bottom: 1%;
-}
-
-div.cardBar{
-
 }
 
 .button1,
@@ -180,7 +178,6 @@ div.cardBar{
     .cardImage{
       display: none;
     }
-    
 }
 
 /*styles for the cart starts here*/
