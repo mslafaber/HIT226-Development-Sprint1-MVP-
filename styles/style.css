@@ -509,3 +509,19 @@ ul li:hover{
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
 }
+a:link{
+    color: #fff1d0;
+}
+a:visited{
+    color: #fff1d0;
+}
+a:hover{
+    color: #060606;
+}
+a:active{
+    color: #060606;
+}
+/* main container */
+html {
+    height: 100%;
+}
