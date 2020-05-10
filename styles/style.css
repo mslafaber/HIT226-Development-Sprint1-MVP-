@@ -521,7 +521,24 @@ a:hover{
 a:active{
     color: #060606;
 }
-/* main container */
+
 html {
     height: 100%;
+}
+h1 {
+    padding: 20px;
+    font-family: "Edwardian Script ITC";
+    font-size: 6em;
+    font-weight: bold;
+    margin: 35px;
+    text-align: center;
+    color: #060606;
+    position: center;
+}
+.footer1{
+    font-family: Impact, Charcoal, sans-serif;
+    color: #fff1d0;
+    font-size:25px;
+    font-weight: lighter;
+    position: center;
 }
