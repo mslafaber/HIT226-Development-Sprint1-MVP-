@@ -401,3 +401,64 @@ nav ul li a:hover{
 .fa-google{
     color: #bf0603;
 }
+.container {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    min-height: 80px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+    align-items:center;
+    background: #bf0603;
+
+    padding:100px;
+}
+/* main container */
+html {
+    height: 100%;
+}
+/*main container*/
+.flex-container{
+    background-color: #bf0603;
+    display: flex;
+    height:100%;
+}
+.flex-container>div{
+    background-color: #fff1d0;
+    width:100%;
+    margin: 200px 30px 40px 30px;
+    border-radius: 10px;
+}
+.child-container>div{
+    background-color: #fff1d0;
+    display: flex;
+    width:15%;
+    margin: 20px 30px 20px 30px;
+    border-radius: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+aside{
+    width: 28%;
+    margin: 200px 30px 200px 30px;
+    border-radius: 10px;
+}
+article, aside{
+    background-color: #FFF1D0;
+    padding: 2.5%;
+}
+article{
+    width: 75%;
+    margin-right: 0.5%;
+}
+section{
+    background-color: #E6C3A6;
+    padding: 10%;
+    margin: 1.5%;
+
+}
