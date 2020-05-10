@@ -463,6 +463,8 @@ ul li:hover{
 }
 a:link{
     color: #fff1d0;
+    font-family: Impact, Charcoal, sans-serif;
+
 }
 a:visited{
     color: #fff1d0;
