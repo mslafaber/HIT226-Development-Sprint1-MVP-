@@ -150,13 +150,6 @@ img.cardImage{
 }
 
 /*styles for the cart starts here*/
-.view_cart{
-  margin: 0%;
-  padding: 0.5%;
-  max-height: 35%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-}
 .addtocart-btn{
   border: none;
   background-color: #bf0603;
