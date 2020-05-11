@@ -460,20 +460,20 @@ nav ul li a:hover{
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
 }
-a:link{
+:link{
     color: #fff1d0;
     font-family: Impact, Charcoal, sans-serif;
     text-decoration: none;
 
 }
-a:visited{
+:visited{
     color: #fff1d0;
     text-decoration: none;
 }
-a:hover{
+:hover{
     color: #060606;
 }
-a:active{
+:active{
     color: #060606;
 }
 
