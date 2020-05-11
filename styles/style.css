@@ -306,13 +306,14 @@ nav ul li a{
 }
 
 nav ul li a.active {
-  background: #BF0603;
-  color: #FFF1D0;
+  background: #E6C3A6;
+  color: #BF0603;
   transition: 0.35s;
 }
 nav ul li a:hover{
   opacity: 0.75;
   color: #BF0603;
+  background: #E6C3A6;
   transition: 0.35s;
 }
 
@@ -400,19 +401,14 @@ nav ul li a:hover{
 }
 
 .container {
-    display: flex;
-    display: -webkit-flex; /* Safari */
-    min-height: 80px;
-    flex-direction: row;
     text-align: center;
     justify-content: center;
-    flex-wrap:wrap;
     align-items: flex-end;
     align-content: flex-end;
-    align-items:center;
+    justify-items: center;
     background: #bf0603;
 
-    padding:100px;
+    padding:2.5%;
 }
 *{
     margin:0;
@@ -420,24 +416,27 @@ nav ul li a:hover{
     padding:0;
 }
 
-.dec{
-    display:flex;
+.dec {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
 }
-.dec li{
-    position: relative;
-    display:block;
+.dec ul{
+  
+}
+.dec li.footeritem{
     color: #bf0603;
-    font-size:30px;
-    height:60px;
+    font-size:1.2em;
+    height: 60px;
     width:60px;
     background: #fff1d0;
     line-height:60px;
     border-radius:50%;
-    margin:0 15px;
+    margin: 5%;
     cursor:pointer;
     transition: .3s;
 }
-.dec li:before{
+.dec li.footeritem:before{
     position:absolute;
     content:'';
     top:0;
@@ -450,22 +449,30 @@ nav ul li a:hover{
     transform:scale(0.9);
     transition:.8s;
 }
-.dec li:hover:before{
+.dec li.footeritem:hover:before{
     filter:blur(3px);
     transform: scale(2);
     box-shadow: 0 0 30px #d35400;
 }
-.dec li:hover{
+.dec li.footeritem:hover{
     color: #bf0603;
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
 }
+<<<<<<< HEAD
 :link{
+=======
+a.footerbottom{
+  font-size: .85em;
+}
+a.footerbottom:link{
+>>>>>>> b5cfc0cde4d686f96057a2a65b1dbca3c9426748
     color: #fff1d0;
     font-family: Impact, Charcoal, sans-serif;
     text-decoration: none;
 
 }
+<<<<<<< HEAD
 :visited{
     color: #fff1d0;
     text-decoration: none;
@@ -474,6 +481,16 @@ nav ul li a:hover{
     color: #060606;
 }
 :active{
+=======
+a.footerbottom:visited{
+    color: #fff1d0;
+    text-decoration: none;
+}
+a.footerbottom:hover{
+    color: #060606;
+}
+a.footerbottom:active{
+>>>>>>> b5cfc0cde4d686f96057a2a65b1dbca3c9426748
     color: #060606;
 }
 
