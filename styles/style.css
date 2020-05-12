@@ -399,7 +399,10 @@ nav ul li a:hover{
 .fa-envelope{
     color:#bf0603;
 }
-
+.fa-phone{
+    color:#bf0603;
+    font-size: 50px;
+}
 .container {
     text-align: center;
     justify-content: center;
@@ -435,9 +438,10 @@ nav ul li a:hover{
     margin: 5%;
     cursor:pointer;
     transition: .3s;
+    position: center;
 }
 .dec li.footeritem:before{
-    position:absolute;
+    position:center;
     content:'';
     top:0;
     left:0;
@@ -459,20 +463,19 @@ nav ul li a:hover{
     box-shadow: 0 20px 50px #060606;
     text-shadow: 0 20px 50px #bf0603;
 }
-<<<<<<< HEAD
-:link{
-=======
+
+
+
 a.footerbottom{
   font-size: .85em;
 }
 a.footerbottom:link{
->>>>>>> b5cfc0cde4d686f96057a2a65b1dbca3c9426748
+
     color: #fff1d0;
     font-family: Impact, Charcoal, sans-serif;
     text-decoration: none;
 
 }
-<<<<<<< HEAD
 :visited{
     color: #fff1d0;
     text-decoration: none;
@@ -480,8 +483,7 @@ a.footerbottom:link{
 :hover{
     color: #060606;
 }
-:active{
-=======
+
 a.footerbottom:visited{
     color: #fff1d0;
     text-decoration: none;
@@ -490,7 +492,7 @@ a.footerbottom:hover{
     color: #060606;
 }
 a.footerbottom:active{
->>>>>>> b5cfc0cde4d686f96057a2a65b1dbca3c9426748
+
     color: #060606;
 }
 
