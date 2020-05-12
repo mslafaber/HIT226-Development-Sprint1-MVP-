@@ -383,10 +383,7 @@ nav ul li a:hover{
     color: #bf0603;
 
 }
-.fa-twitter {
-    background: rgba(255, 255, 255, 0);
-    color: #bf0603;
-}
+
 .fa-instagram{
     color: #bf0603;
 }
@@ -399,10 +396,7 @@ nav ul li a:hover{
 .fa-envelope{
     color:#bf0603;
 }
-.fa-phone{
-    color:#bf0603;
-    font-size: 50px;
-}
+
 .container {
     text-align: center;
     justify-content: center;
