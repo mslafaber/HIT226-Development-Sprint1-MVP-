@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d65a2232-ee42-450f-9543-f9807acec789" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="d65a2232-ee42-450f-9543-f9807acec789" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,7 +15,7 @@
     <session id="-1464425897">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
@@ -77,16 +74,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="475" lean-forward="true" selection-start-line="475" selection-end-line="475" />
+            <state relative-caret-position="9158">
+              <caret line="482" lean-forward="true" selection-start-line="482" selection-end-line="482" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-402" />
           </provider>
         </entry>
       </file>
@@ -109,7 +99,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="23" />
     <option name="y" value="-10" />
     <option name="width" value="1714" />
@@ -172,16 +162,15 @@
       <workItem from="1589109609567" duration="5156000" />
       <workItem from="1589115811693" duration="4855000" />
       <workItem from="1589120930136" duration="392000" />
-      <workItem from="1589123189281" duration="295000" />
+      <workItem from="1589123189281" duration="297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10698000" />
+    <option name="totallyTimeSpent" value="10700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16174921" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -229,8 +218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="475" lean-forward="true" selection-start-line="475" selection-end-line="475" />
+        <state relative-caret-position="9158">
+          <caret line="482" lean-forward="true" selection-start-line="482" selection-end-line="482" />
         </state>
       </provider>
     </entry>
