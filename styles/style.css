@@ -476,11 +476,11 @@ a.footerbottom:link{
     text-decoration: none;
 
 }
-:visited{
+a.footerbottom:visited{
     color: #fff1d0;
     text-decoration: none;
 }
-:hover{
+a.footerbottom:hover{
     color: #060606;
 }
 
