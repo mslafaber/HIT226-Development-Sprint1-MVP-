@@ -49,12 +49,11 @@ h3{
 }
 .order_item{
     background-color: #E6C3A6;
-    padding: 1.5%;
+    padding: 1%;
     margin-bottom: 2.5%;
 }
 .order_container{
     background-color: #FFF1D0;
-    padding: 1%;
 }
 .payment{
     display: none;
@@ -101,7 +100,6 @@ article.confirmation{
 */
 /*styles for the all the cards starts here*/
 .cardItem{
-  margin: 1%;
 }
 .card_component{
   width: 85%;
@@ -120,13 +118,14 @@ strong{
   font-weight: lighter;
 }
 img.cardImage{
-  max-width: 75%;
+  max-width: 100%;
 }
 .food_item{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
   background-color: #FFF1D0;
   margin-bottom: 1%;
+  position: relative;
 }
 .button1,
 .remove-button{
