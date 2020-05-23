@@ -1,34 +1,34 @@
 $(document).ready(function () {
-    $("#pasta, #sides, #drinks, #meals, #payment").css("display", "none");
+    $("#pasta, #salads, #drinks, #sides, #payment").css("display", "none");
     $("#pizza_button").click(function () {
         $("#pizza").show();
-        $("#pasta, #sides, #drinks, #meals, #payment").hide();
-        $("#pasta_button, #sides_button, #drinks_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
-        $("#pizza_button").css({"background-color":"red"});
+        $("#pasta, #salads, #drinks, #sides, #payment").hide();
+        $("#pasta_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
+        $("#pizza_button").css({"background-color":"#CA2521"});
     });
     $("#pasta_button").click(function () {
         $("#pasta").show();
-        $("#pizza, #sides, #drinks, #meals, #payment").hide();
-        $("#pizza_button, #sides_button, #drinks_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
-        $("#pasta_button").css({"background-color":"red"});
+        $("#pizza, #salads, #drinks, #sides, #payment").hide();
+        $("#pizza_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
+        $("#pasta_button").css({"background-color":"#CA2521"});
     });
-    $("#sides_button").click(function () {
-        $("#sides").show();
-        $("#pizza, #pasta, #drinks, #meals, #payment").hide();
-        $("#pasta_button, #pizza_button, #drinks_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
-        $("#sides_button").css({"background-color":"red"});
+    $("#salads_button").click(function () {
+        $("#salads").show();
+        $("#pizza, #pasta, #drinks, #sides, #payment").hide();
+        $("#pasta_button, #pizza_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
+        $("#salads_button").css({"background-color":"#CA2521"});
     });
     $("#drinks_button").click(function () {
         $("#drinks").show();
-        $("#pizza, #sides, #pasta, #meals, #payment").hide();
-        $("#pasta_button, #sides_button, #pizza_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
-        $("#drinks_button").css({"background-color":"red"});
+        $("#pizza, #salads, #pasta, #sides, #payment").hide();
+        $("#pasta_button, #salads_button, #pizza_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
+        $("#drinks_button").css({"background-color":"#CA2521"});
     });
-    $("#meals_button").click(function () {
-        $("#meals").show();
-        $("#pizza, #sides, #drinks, #pasta, #payment").hide();
-        $("#pasta_button, #sides_button, #drinks_button, #pizza_button").css({"border": "none", "background-color":"#bf0603"});
-        $("#meals_button").css({"background-color":"red"});
+    $("#sides_button").click(function () {
+        $("#sides").show();
+        $("#pizza, #salads, #drinks, #pasta, #payment").hide();
+        $("#pasta_button, #salads_button, #drinks_button, #pizza_button").css({"border": "none", "background-color":"#61120E"});
+        $("#sides_button").css({"background-color":"#CA2521"});
     });
     $("#order_next_button").click(function() {
         $(".order_time").hide();
@@ -44,10 +44,10 @@ $(document).ready(function () {
             $(".order_container").slideDown(175, function(){
                 $("#cart_contents").hide();
                 $("#pizza").slideDown();
-                $("#pasta_button, #sides_button, #drinks_button, #meals_button").css({"border": "none", "background-color":"#bf0603"});
-                $("#pizza_button").css({"background-color":"red"});
+                $("#pasta_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
+                $("#pizza_button").css({"background-color":"#CA2521"});
             });
-            $("#pasta, #sides, #drinks, #meals").hide();
+            $("#pasta, #salads, #drinks, #sides").hide();
         });
     });
     $("#payment_next_button").click(function() {
