@@ -175,6 +175,7 @@ img.cardImage{
   justify-items: center;
   position: relative;
 }
+.dealbutton,
 .button1,
 .remove-button{
   border: none;
@@ -672,3 +673,88 @@ Common Page styling ends here, please don't before consulting IXD
     padding: 2.5%;
 }
 }
+
+/*homepage unique content*/
+
+.home_unique_content{
+  background-color:white;
+  padding: 2.5%;
+}
+
+p.highlight {
+  font-weight: bold;
+}
+
+div.dealcardItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+div.dealcard{
+    margin: 30px;
+    width: 350px;
+    display: grid;
+    border: black solid;
+    background-color: #FFF1D0;
+}
+div.dealcardItem{
+    padding: 2.5%;
+}
+
+img.dealcardImage{
+    width: 100%;
+}
+
+div h3.foodtitle{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 2px;
+  margin-bottom: 9px;
+}
+
+
+div p.dealfood-details{
+  display: flex;
+  align-content: center;
+  margin: 0px;
+  padding: 3px;
+}
+
+.dealfoodprice{
+  flex-grow: 1;
+}
+
+div.dealcardBar{
+    display: flex;
+}
+
+.dealbutton {
+  border: none;
+  background-color: #bf0603;
+  padding: 2.5%;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color: #FFF1D0;
+  margin: 2.0%;
+  cursor: pointer;
+  transition: 0.4ms;
+  border-radius: 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.1em;
+}
+.dealbutton:hover{
+  background-color: brown;
+  color: #FFF1D0;
+}
+
+@media screen and (max-width: 300px) {
+    div.dealcard{
+        width: 100%;
+    }
+}
+
+/*home page unique content styling ends here*/
