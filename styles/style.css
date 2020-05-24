@@ -636,3 +636,8 @@ Common Page styling ends here, please don't before consulting IXD
     padding: 2.5%;
 }
 }
+
+/*homepage unique content*/
+p.highlight {
+  font-weight: bold;
+}
