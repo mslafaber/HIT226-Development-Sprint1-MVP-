@@ -32,10 +32,14 @@ h3{
 }
 .form_element{
     margin-bottom: 1.5%;
+    margin-top: 1.5%;
     height: 3em;
     border: none;
     font-style: italic;
     padding: 1.5%;
+    background-color: white;
+    color: black;
+    width: 55%;
 }
 /* Styling for containers, and other components except for menu components starts from here
     Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
@@ -517,8 +521,8 @@ div.intro_slider img{
 .slider_shade{
   position: fixed;
   top: 0;
-  background-color: white;
-  opacity: 0.6;
+  background-color: lightgray;
+  opacity: 0.7;
   z-index: -1;
 }
 .hero_slider{
@@ -549,21 +553,47 @@ Common Page styling ends here, please don't before consulting IXD
 /*
   Reservations unique content styling begins here
 */
-  div.booking_table{
+  div.reservation{
+    height: unset;
+  }
+  div.booking_process{
+    width: 100%;
     margin: 1.5%;
     margin-top: 2.5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(6em, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(10em, 1fr));
   }
 
-  figure.booking_table{
+  figure.booking_process{
     width: 100%;
     padding-left: 25%;
     padding-right: 25%;
     text-align: center;
   }
 
-  figure.booking_table img{
+  figure.booking_process img{
+    width: 100%;
+  }
+  div.booking_description{
+    align-self: flex-start;
+  }
+  div.booking{
+    display: flex;
+  }
+  div.booking_form .form_element{
+    width: 90%;
+    background-color: transparent;
+    border-bottom: black solid;
+  }
+  div.booking_form{
+    width: 100%;
+  }
+  figure.booking{
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  figure.booking img{
     width: 100%;
   }
 /*
@@ -618,6 +648,12 @@ Common Page styling ends here, please don't before consulting IXD
   }
 }
 @media screen and (max-width: 750px) {
+  div.booking_form .form_element{
+    width: 100%;
+  }
+  div.booking{
+    flex-direction: column;
+  }
   .page_paragraph, .hero_slider{
     width: 100%;
   }
