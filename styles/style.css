@@ -4,10 +4,9 @@
     color: #080705;
 }
 body{
-    background: linear-gradient(to top, black, 10%, #FFF1D0);
+    background-color: #61120E;
     width: 100%;
 }
-/*#61120E*/
 h1,h2,h3,
 .foodprice{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -48,18 +47,17 @@ h3{
     list-style: none;
 }
 .order_item{
-    background: linear-gradient(to top, #CA2521, 80%, #FFF1D0);
+    background-color: #CA2521;
     padding: 1%;
     margin-bottom: 2.5%;
 }
 .order_item h2{
-  color: #61120E;
+  color: #eca442;
   margin-bottom: 1%;
 }
 .order_container{
-    background: linear-gradient(to top, #ECA442, 20%, #FFF1D0);;
+    background-color: #ECA442;
 }
-/*#ECA442*/
 .payment{
     display: none;
     background-color: #ECA442;
@@ -148,14 +146,9 @@ img.cardImage{
   width: 100%;
   object-fit: cover;
 }
-
-.foodnametopic {
-  color: ;
-}
-
 .food_item{
   display: flex;
-  background: linear-gradient(to top, #FFF1D0, 30%, #ECA442);
+  background-color: #ECA442;
   margin-bottom: 1%;
   justify-items: center;
   position: relative;
@@ -173,7 +166,6 @@ img.cardImage{
   cursor: pointer;
   border-radius: 2.5px;
 }
-/*#61120E*/
 .button1:hover{
     background-color: brown;
     color: #ECA442;
@@ -278,9 +270,8 @@ div span.food-sum-price{
 header {
   position: relative;
   width: 100%;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  background: linear-gradient(to top, #FFF1D0, 5%, #ECA442);
+  margin: 20px auto;
+  background: #ECA442;
   box-sizing: border-box;
 }
 
@@ -446,7 +437,7 @@ nav ul li a:hover{
     grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
 }
 .dec ul{
-
+  
 }
 .dec li.footeritem{
     color: #61120E;
