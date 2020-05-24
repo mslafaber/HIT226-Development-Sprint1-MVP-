@@ -495,6 +495,9 @@ a.footerbottom:active{
     font-weight: lighter;
 
 }
+/*
+Common Page styling begins here, please don't change before consulting IXD
+*/
 div.intro_slider{
   display: flex;
   flex-direction: column;
@@ -539,8 +542,33 @@ div.intro_slider img{
   background-color:white;
   padding: 2.5%;
 }
+/*
+Common Page styling ends here, please don't before consulting IXD
+*/
 
+/*
+  Reservations unique content styling begins here
+*/
+  div.booking_table{
+    margin: 1.5%;
+    margin-top: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(6em, 1fr));
+  }
 
+  figure.booking_table{
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+  }
+
+  figure.booking_table img{
+    width: 100%;
+  }
+/*
+  Reservations unique content styling ends here
+*/
 @media (max-width: 1015px) {
   .navigation-toggle{
     display: block;
