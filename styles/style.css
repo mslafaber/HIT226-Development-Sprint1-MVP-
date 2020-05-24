@@ -585,6 +585,9 @@ div.intro_slider img{
   .page_paragraph, .hero_slider{
     width: 100%;
   }
+  .intro_slider, .unique_content{
+    font-size: 1.4em;
+  }
 }
 @media screen and (max-width: 750px) {
   .page_paragraph, .hero_slider{
