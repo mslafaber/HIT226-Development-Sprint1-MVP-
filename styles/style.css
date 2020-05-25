@@ -39,7 +39,7 @@ h3{
     padding: 1.5%;
     background-color: white;
     color: black;
-    width: 55%;
+    width: 25%;
 }
 /* Styling for containers, and other components except for menu components starts from here
     Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
@@ -118,11 +118,16 @@ article.confirmation{
   Styling for payment method starts here. Please be sure read through all the classes, ids, and other attributes of the existing code so that there is no duplication of names and there no redundent code.
   Thanks
 */
-
 .card_number{
+  width: 20%;
+}
+.cvv{
   width: 7.5%;
 }
 
+.exp_date{
+  width: 7.5%;
+}
 /*styles for the all the cards starts here*/
 .card_component{
   width: 85%;
@@ -649,6 +654,19 @@ Common Page styling ends here, please don't before consulting IXD
   }
 }
 @media screen and (max-width: 750px) {
+  .form_element{
+    width: 90%;
+  }
+  .card_number{
+    width: 40%;
+  }
+  .cvv{
+    width: 27.5%;
+  }
+  
+  .exp_date{
+    width: 27.5%;
+  }
   div.booking_form .form_element{
     width: 100%;
   }
