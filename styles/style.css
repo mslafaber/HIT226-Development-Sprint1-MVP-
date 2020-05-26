@@ -663,7 +663,7 @@ Common Page styling ends here, please don't before consulting IXD
   .cvv{
     width: 27.5%;
   }
-  
+
   .exp_date{
     width: 27.5%;
   }
@@ -776,3 +776,59 @@ div.dealcardBar{
 }
 
 /*home page unique content styling ends here*/
+
+/*Catering page unique content styling starts here*/
+
+.form_element_date{
+  width: 90%;
+  font-style: italic;
+}
+
+div.catering_description{
+  align-self: flex-start;
+}
+
+div.catering{
+  height: unset;
+}
+div.booking_process{
+  width: 100%;
+  margin: 1.5%;
+  margin-top: 2.5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(10em, 1fr));
+}
+
+figure.booking_process{
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+}
+
+figure.booking_process img{
+  width: 100%;
+}
+div.booking_description{
+  align-self: flex-start;
+}
+div.catering{
+  display: flex;
+}
+div.catering_form .form_element{
+  width: 90%;
+  background-color: transparent;
+  border-bottom: black solid;
+}
+div.booking_form{
+  width: 100%;
+}
+figure.booking{
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+figure.booking img{
+  width: 100%;
+}
+/*Catering page unique content styling ends here*/
