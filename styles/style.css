@@ -814,6 +814,7 @@ div.dealcardBar{
     width:auto;
     margin: 20px 0px 5px 200px;
     float:left;
+
 }
 .gallery img{
     transition: 1s;
@@ -871,9 +872,12 @@ div.dealcardBar{
 .map{
     position:center;
     float: right;
+    width:900px;
+    height:800px;
     margin-right:200px;
     margin-top:40px;
     padding-top: 20px;
+
 
 }
 .schedule{
