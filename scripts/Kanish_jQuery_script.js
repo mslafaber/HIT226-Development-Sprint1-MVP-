@@ -118,12 +118,12 @@ $(document).ready(function () {
     })
     //end
     $("#bookingButton").click(function () {
-    if ($("#cc_name").css("border-bottom") == "2.4px solid rgb(0, 128, 0)"
-        && $("#cc_phone").css("border-bottom") == "2.4px solid rgb(0, 128, 0)"
-        && $("#cc_email").css("border-bottom") == "2.4px solid rgb(0, 128, 0)"
-        && $("#guests_reservation").css("border-bottom") == "2.4px solid rgb(0, 128, 0)") {
-        $(".booking_done").show();
-        $(".booking_form").hide();
+        if ($("#cc_name").css("border-bottom-color") == "rgb(0, 128, 0)"
+            && $("#cc_phone").css("border-bottom-color") == "rgb(0, 128, 0)"
+            && $("#cc_email").css("border-bottom-color") == "rgb(0, 128, 0)"
+            && $("#guests_reservation").css("border-bottom-color") == "rgb(0, 128, 0)") {
+            $(".booking_done").show();
+            $(".booking_form").hide();
     }   
     });
     $("#cc_name").focusout(ccNameValidation);
@@ -136,8 +136,7 @@ $(document).ready(function () {
     $("#cvv").focusout(cvvValidation);
     $("#guests_reservation").focusout(guestsValidation);
     $("#exp_date").focusout(cc_expDateValidation);
-    $("#exp_date").datepicker(
-        {
+    $("#exp_date").datepicker({
             changeMonth: true,
             changeYear: true,
             showButtonPanel: true,
