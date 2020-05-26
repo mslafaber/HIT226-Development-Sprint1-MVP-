@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var cc_number, cc_email, cc_cvv, cc_phone, cc_name, cc_expDate = true;
     var pis_email, pis_phone, pis_name = true;
+    var booking_guests = true;
 
     $("#pasta, #salads, #drinks, #sides, #payment").css("display", "none");
     $("#pizza_button").click(function () {
@@ -116,7 +117,15 @@ $(document).ready(function () {
       $("nav.sitenavigation").toggleClass("active")
     })
     //end
-
+    $("#bookingButton").click(function () {
+    if ($("#cc_name").css("border-bottom") == "2.4px solid rgb(0, 128, 0)"
+        && $("#cc_phone").css("border-bottom") == "2.4px solid rgb(0, 128, 0)"
+        && $("#cc_email").css("border-bottom") == "2.4px solid rgb(0, 128, 0)"
+        && $("#guests_reservation").css("border-bottom") == "2.4px solid rgb(0, 128, 0)") {
+        $(".booking_done").show();
+        $(".booking_form").hide();
+    }   
+    });
     $("#cc_name").focusout(ccNameValidation);
     $("#pis_name").focusout(pisNameValidation);
     $("#cc_email").focusout(ccEmailValidation);
@@ -125,6 +134,7 @@ $(document).ready(function () {
     $("#pis_phone").focusout(pisPhoneValidation);
     $("#card_number").focusout(cardNumberValidation);
     $("#cvv").focusout(cvvValidation);
+    $("#guests_reservation").focusout(guestsValidation);
     $("#exp_date").focusout(cc_expDateValidation);
     $("#exp_date").datepicker(
         {
@@ -247,6 +257,18 @@ $(document).ready(function () {
         else{
             $("#exp_date").css({"border-bottom":"green solid"});
             cc_expDate = false;
+        }
+    }
+    function guestsValidation() {
+        guestRegEx = /^[1-9]$/;
+        value = $("#guests_reservation").val();
+        if (guestRegEx.test(value) == false || value =="") {
+            $("#guests_reservation").css({"border-bottom":"red solid"});
+            booking_guests = true;
+        }
+        else{
+            $("#guests_reservation").css({"border-bottom":"green solid"});
+            booking_guests = false;
         }
     }
 });

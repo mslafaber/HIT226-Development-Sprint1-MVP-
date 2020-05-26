@@ -49,7 +49,7 @@ h3{
     Thanks
 */
 .order_parent{
-  margin-top: 8vh;
+  margin-top: 8.5vh;
 }
 .menu_nav{
     padding: 1.5%;
@@ -603,6 +603,19 @@ Common Page styling ends here, please don't before consulting IXD
     padding-right: 25%;
   }
   figure.booking img{
+    width: 100%;
+  }
+  div.booking_done{
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  figure.booking_done{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  figure.booking_done img{
     width: 100%;
   }
 /*

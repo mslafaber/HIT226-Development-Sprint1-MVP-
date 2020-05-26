@@ -49,13 +49,20 @@
         <h2>Book a Table</h2>
         <div class="booking">
 
+            <div class="booking_done">
+                <figure class="booking_done">
+                    <img src="../images/reservations/pizza-shop.svg" alt="">
+                </figure>
+                <h3>Booking Done</h3>
+            </div>
+
             <div class="booking_form">
-                <form class="booking_form" action="">
-                    <input type="text" class="form_element" placeholder="Full Name"><br>
-                    <input type="text" class="form_element" placeholder="Mobile Number"><br>
-                    <input type="text" class="form_element" placeholder="E-Mail"><br>
-                    <input type="text" class="form_element" placeholder="Number of Guests"><br>
-                    <input type="submit" class="button1">
+                <form onsubmit="return reservationValidation();" class="booking_form" action="">
+                    <input id="cc_name" type="text" class="form_element" placeholder="Full Name"><br>
+                    <input id="cc_phone" type="text" class="form_element" placeholder="Mobile Number"><br>
+                    <input id="cc_email" type="text" class="form_element" placeholder="E-Mail"><br>
+                    <input id="guests_reservation" type="text" class="form_element" placeholder="Number of Guests"><br>
+                    <input type="button" class="button1" id="bookingButton" value="Submit">
                 </form>
             </div>
 
