@@ -837,6 +837,8 @@ div.dealcardBar{
     flex-shrink: 0;
 }
 
+/* -----Map----*/
+
 .desc2{
     font-size:40px;
     color:#CA2521;
@@ -859,4 +861,27 @@ div.dealcardBar{
     text-align: justify;
 }
 
+.Darwin{
+    Font-size:60px;
+    color: #bf0603;
+    font-weight:bold;
+    position: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.map{
+    position:center;
+    float: right;
+    margin-right:200px;
+    margin-top:40px;
+    padding-top: 20px;
+
+}
+.schedule{
+    Font-size:20px;
+    color: #636363;
+    float:left;
+    margin-left:200px;
+
+    font-family: 'Helvetica Neue';
+}
 
