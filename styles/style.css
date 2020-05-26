@@ -666,7 +666,7 @@ Common Page styling ends here, please don't before consulting IXD
   .cvv{
     width: 27.5%;
   }
-  
+
   .exp_date{
     width: 27.5%;
   }
@@ -702,7 +702,7 @@ Common Page styling ends here, please don't before consulting IXD
   padding: 2.5%;
 }
 
-p.highlight {
+.highlight {
   font-weight: bold;
 }
 
@@ -718,7 +718,13 @@ div.dealcard{
     display: grid;
     border: black solid;
     background-color: #FFF1D0;
+    transition: all .2s ease-in-out;
 }
+
+div.dealcard:hover{
+  transform: scale(1.1);
+}
+
 div.dealcardItem{
     padding: 2.5%;
 }
@@ -779,3 +785,12 @@ div.dealcardBar{
 }
 
 /*home page unique content styling ends here*/
+
+/*Catering page unique content styling starts here*/
+
+.form_element_date{
+  width: 90%;
+  font-style: italic;
+}
+
+/*Catering page unique content styling ends here*/
