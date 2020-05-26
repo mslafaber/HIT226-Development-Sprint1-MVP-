@@ -1,37 +1,37 @@
 $(document).ready(function () {
-    var cc_number, cc_email, cc_cvv, cc_phone, cc_name = true;
+    var cc_number, cc_email, cc_cvv, cc_phone, cc_name, cc_expDate = true;
     var pis_email, pis_phone, pis_name = true;
 
     $("#pasta, #salads, #drinks, #sides, #payment").css("display", "none");
     $("#pizza_button").click(function () {
         $("#pizza").show();
         $("#pasta, #salads, #drinks, #sides, #payment").hide();
-        $("#pasta_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
-        $("#pizza_button").css({"background-color":"#CA2521"});
+        $("#pasta_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#CA2521"});
+        $("#pizza_button").css({"background-color":"red"});
     });
     $("#pasta_button").click(function () {
         $("#pasta").show();
         $("#pizza, #salads, #drinks, #sides, #payment").hide();
-        $("#pizza_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
-        $("#pasta_button").css({"background-color":"#CA2521"});
+        $("#pizza_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#CA2521"});
+        $("#pasta_button").css({"background-color":"red"});
     });
     $("#salads_button").click(function () {
         $("#salads").show();
         $("#pizza, #pasta, #drinks, #sides, #payment").hide();
-        $("#pasta_button, #pizza_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
-        $("#salads_button").css({"background-color":"#CA2521"});
+        $("#pasta_button, #pizza_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#CA2521"});
+        $("#salads_button").css({"background-color":"red"});
     });
     $("#drinks_button").click(function () {
         $("#drinks").show();
         $("#pizza, #salads, #pasta, #sides, #payment").hide();
-        $("#pasta_button, #salads_button, #pizza_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
-        $("#drinks_button").css({"background-color":"#CA2521"});
+        $("#pasta_button, #salads_button, #pizza_button, #sides_button").css({"border": "none", "background-color":"#CA2521"});
+        $("#drinks_button").css({"background-color":"red"});
     });
     $("#sides_button").click(function () {
         $("#sides").show();
         $("#pizza, #salads, #drinks, #pasta, #payment").hide();
-        $("#pasta_button, #salads_button, #drinks_button, #pizza_button").css({"border": "none", "background-color":"#61120E"});
-        $("#sides_button").css({"background-color":"#CA2521"});
+        $("#pasta_button, #salads_button, #drinks_button, #pizza_button").css({"border": "none", "background-color":"#CA2521"});
+        $("#sides_button").css({"background-color":"red"});
     });
     $("#order_next_button").click(function() {
         $(".order_time").hide();
@@ -47,8 +47,8 @@ $(document).ready(function () {
             $(".order_container").slideDown(175, function(){
                 $("#cart_contents").hide();
                 $("#pizza").slideDown();
-                $("#pasta_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#61120E"});
-                $("#pizza_button").css({"background-color":"#CA2521"});
+                $("#pasta_button, #salads_button, #drinks_button, #sides_button").css({"border": "none", "background-color":"#CA2521"});
+                $("#pizza_button").css({"background-color":"red"});
             });
             $("#pasta, #salads, #drinks, #sides").hide();
         });
@@ -75,6 +75,7 @@ $(document).ready(function () {
         cc_cvv = true;
         cc_phone = true;
         cc_name = true;
+        cc_expDate = true,
 
         pis_email= false;
         pis_phone= false;
@@ -94,6 +95,7 @@ $(document).ready(function () {
         cc_cvv = false;
         cc_phone = false;
         cc_name = false;
+        cc_expDate = false,
 
         pis_email= true;
         pis_phone= true;
@@ -123,6 +125,17 @@ $(document).ready(function () {
     $("#pis_phone").focusout(pisPhoneValidation);
     $("#card_number").focusout(cardNumberValidation);
     $("#cvv").focusout(cvvValidation);
+    $("#exp_date").focusout(cc_expDateValidation);
+    $("#exp_date").datepicker(
+        {
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'MM yy',
+            onClose: function(dateText, inst) { 
+                $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+            },
+        });
 
     function ccEmailValidation(){ 
         var emailRegEx = /^([\w\.-]+)@([a-z0-9 -]+)\.([a-z]{2,8})(\.[a-z]{1,8})?$/;
@@ -137,7 +150,6 @@ $(document).ready(function () {
             cc_email = false
         }
     }
-
     function pisEmailValidation(){ 
         var emailRegEx = /^([\w\.-]+)@([a-z0-9 -]+)\.([a-z]{2,8})(\.[a-z]{1,8})?$/;
         var email = $("#pis_email").val();
@@ -151,7 +163,6 @@ $(document).ready(function () {
             pis_email = false;
         }
     }
-
     function ccPhoneValidation(){
         var phoneRegEx = /^0[3-4]\d{8}$/;
         var phone = $("#cc_phone").val();
@@ -164,7 +175,6 @@ $(document).ready(function () {
             cc_phone = false;
         }
     }
-
     function pisPhoneValidation(){
         var phoneRegEx = /^0[3-4]\d{8}$/;
         var phone = $("#pis_phone").val();
@@ -177,7 +187,6 @@ $(document).ready(function () {
             pis_phone = false;
         }
     }
-
     function cardNumberValidation(){
         var cardRegEx = /^\d{4}$/;
         var cardNumber = $("#card_number").val();
@@ -191,7 +200,6 @@ $(document).ready(function () {
             cc_number = false;
         }
     }
-
     function cvvValidation(){
         var cvvRegEx = /^\d{3}$/;
         var cvv = $("#cvv").val();
@@ -205,7 +213,6 @@ $(document).ready(function () {
             cc_cvv = false;
         }
     }
-
     function ccNameValidation(){
         var name = $("#cc_name").val();
 
@@ -218,7 +225,6 @@ $(document).ready(function () {
             cc_name = false;
         }
     }
-
     function pisNameValidation(){
         var name = $("#pis_name").val();
 
@@ -229,6 +235,18 @@ $(document).ready(function () {
         else{
             $("#pis_name").css({"border-bottom":"green solid"});
             pis_name = false;
+        }
+    }
+    function cc_expDateValidation(){
+        var expDate = $("#exp_date").val();
+
+        if (expDate == "") {
+            $("#exp_date").css({"border-bottom":"red solid"});
+            cc_expDate = true;
+        }
+        else{
+            $("#exp_date").css({"border-bottom":"green solid"});
+            cc_expDate = false;
         }
     }
 });
