@@ -715,7 +715,13 @@ div.dealcard{
     display: grid;
     border: black solid;
     background-color: #FFF1D0;
+    transition: all .2s ease-in-out;
 }
+
+div.dealcard:hover{
+  transform: scale(1.1);
+}
+
 div.dealcardItem{
     padding: 2.5%;
 }
